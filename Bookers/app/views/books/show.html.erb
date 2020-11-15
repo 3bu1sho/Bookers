@@ -1,18 +1,19 @@
-<header>
-
-   <a>
-      Bookers
-   </a>
-
-</header>
-
-
-
-<!-- main -->
-<main>
-
-</main>
-
-<!-- footer -->
-<footer>
-</footer>
+          <section class="book-text">
+            <tr>
+              <strong>Title:</strong>
+            <td>
+            <%= @book.title %>        <!-- title部分 ここまで -->
+            </td>
+            </tr>
+            <td
+            <strong>Body:</strong>
+            </td>
+            <%= @book.body %>        <!-- title部分 ここまで -->
+            </td>
+            </tr>
+            
+            
+          </section>
+          
+<%= link_to "edit", edit_book_path(@book) %>
+<a class="back" href="/books">Back</a>
