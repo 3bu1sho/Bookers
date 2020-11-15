@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
    resources :books
    
-   root :to => 'books#index'
+   root :to => 'books#start'
    
    post 'todolists' => 'todolists#create'
     
