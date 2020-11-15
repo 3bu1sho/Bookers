@@ -1,0 +1,10 @@
+<h1>Books</h1>
+      <% @book.each do |book| %>
+          <section class="book-text">
+            <tr>
+              <td>
+            <h3 class="book-text-heading"><%= link_to book.title, book_path(blog) %></h3>
+            </td>
+            </tr>
+          </section>
+<% end %>
